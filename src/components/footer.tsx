@@ -1,4 +1,5 @@
 import { Link } from "react-router";
+import main_logo from "../assets/main_logo.png";
 
 export default function Footer() {
   return (
@@ -6,7 +7,12 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between ">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <h2 className="text-lg font-semibold mb-2">Quickmechs</h2>
+            <img
+              src={main_logo}
+              alt="quickmechs logo"
+              className="w-36 md:w-56 object-left"
+            />
+
             <p>
               Quickmechs, Inc. is not responsible for content on external Web
               sites.
